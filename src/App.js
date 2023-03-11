@@ -14,6 +14,7 @@ import { bsc, bscTestnet } from "@wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+import EditForm from "./CreateToken/EditForm";
 function App() {
   const { provider, chains } = configureChains(
     [mainnet, goerli, bscTestnet, bsc],
@@ -57,6 +58,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Form />} />
           <Route path="/details" element={<ShowingData />} />
+          <Route path="/editLock" element={<EditForm />} />
         </Routes>
       </WagmiConfig>
     </>

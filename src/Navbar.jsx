@@ -8,7 +8,7 @@ function Navbar() {
       <AppBar position="static" color="transparent">
         <Toolbar>
           <Link to={"/"} className="link">
-            <Typography variant="h6" component="div" >
+            <Typography variant="h6" component="div">
               Create Your Lock
             </Typography>
           </Link>
