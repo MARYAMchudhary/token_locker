@@ -156,7 +156,7 @@ function Form() {
             </>
           )}
 
-          {/* {!approveConfirmation ? ( */}
+          {!approveConfirmation ? (
           <Box mt={1}>
             <Button
               variant="contained"
@@ -166,12 +166,13 @@ function Form() {
               onClick={() => {
                 approveToken();
               }}
-            >
-              {storingHash ? " Approving..." : "Approve"}
+                >
+                  Approve
+              {/* {storingHash ? " Approving..." : "Approve"} */}
             </Button>
             {/* <Box></Box> */}
           </Box>
-          {/* // ) : ( */}
+           ) : ( 
           <Box
             component="form"
             autoComplete="off"
@@ -355,7 +356,7 @@ function Form() {
             </Button>
           </Box>
 
-          {/* // )} */}
+           )}
         </Container>
       )}
     </Box>
